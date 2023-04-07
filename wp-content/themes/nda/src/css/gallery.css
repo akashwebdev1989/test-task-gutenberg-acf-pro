@@ -1,0 +1,100 @@
+.block-gallery .container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0px auto;
+}
+.block-gallery {
+    background-color: #f6f3f1;
+    width: 100%;
+    padding: 20px 0 60px 0;
+}
+.block-gallery .block-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 42px;
+    font-family: cursive;
+}
+.block-gallery .lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list-items {
+    width: 32%;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.list-items .list-link {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.list-items .list-link a {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.list-items .list-link a:hover {
+    background-color: #f6f3f1;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.list-images {
+    height: 150px;
+}
+.list-images img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.list-items .list-title h3 {
+    font-size: 30px;
+    margin-bottom: 0
+}
+.list-items .list-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Media Query CSS */
+@media screen and (max-width: 1700px) {
+    .block-gallery .container {
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .list-items {
+        margin-bottom: 20px;
+    }
+    .list-images {
+        height: 100px;
+    }
+    .list-items .list-title h3 {
+        font-size: 24px;
+    }
+    .list-items .list-text p {
+        font-size: 14px;
+    }
+    .list-items .list-link a {
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .list-items {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .list-items .list-link a {
+        display: block;
+    }
+}
